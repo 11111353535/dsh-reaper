@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Process Reaper",
+    "description": "Find the orphan dev servers, watchers and background processes an agent left behind, grade them by session ownership, preview the blast radius, then reclaim the ports."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "dsh-reaper",
+  "version": "0.1.0",
+  "description": "Orphan process and port reaper for DeepSeek Harness: find the dev servers, watchers and background processes an agent left behind, attribute them to a workspace, preview the blast radius, and reclaim the ports.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "test:live": "node test/live-scan.mjs",
+    "setup:deps": "node scripts/link-host-deps.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "process",
+    "port",
+    "orphan",
+    "zombie",
+    "reaper",
+    "dev-server",
+    "cleanup",
+    "eaddrinuse"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/dsh-reaper.git"
+  },
+  "homepage": "https://github.com/OWNER/dsh-reaper#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/dsh-reaper/issues"
+  }
+}

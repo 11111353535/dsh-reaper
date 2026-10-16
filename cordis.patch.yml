@@ -1,0 +1,18 @@
+# dsh bundle patch: inserts this plugin into a profile's layer stack.
+#
+# `dsh plugin add dsh-reaper` reads `dsh.bundle.patch` from package.json and
+# merges the row below into ~/.dsh/profiles/<profile>/cordis.patch.yml, so the
+# user never edits that file by hand.
+#
+# Optional per-profile tuning (all keys are optional; defaults live in lib/index.js):
+#
+# - insert:
+#     - id: reaper
+#       name: 'dsh-reaper'
+#       config:
+#         neverKill: ['my-precious-daemon']
+#         protectPorts: [80, 443, 19387]
+#         includeUdp: false
+- insert:
+    - id: reaper
+      name: 'dsh-reaper'
