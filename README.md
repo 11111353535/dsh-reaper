@@ -62,7 +62,13 @@ Reaping is destructive, so the defaults are conservative and the refusals are ab
 ## Install
 
 ```
-dsh plugin add dsh-reaper
+dsh plugin add github:OWNER/dsh-reaper
+```
+
+From a checkout instead of a git host, pass the absolute path:
+
+```
+dsh plugin add /absolute/path/to/dsh-reaper
 ```
 
 The package declares no `dsh-*` peer dependency on purpose: it imports only `node:*` plus `@deepseek-ai/dsh-tools`, which the harness resolves from its own installation. Nothing is bundled that could shadow the host's copy.

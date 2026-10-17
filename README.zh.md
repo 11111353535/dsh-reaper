@@ -62,7 +62,13 @@ workspace: E:\work\shop-frontend
 ## 安装
 
 ```
-dsh plugin add dsh-reaper
+dsh plugin add github:OWNER/dsh-reaper
+```
+
+想从本地检出装，就直接给绝对路径：
+
+```
+dsh plugin add /absolute/path/to/dsh-reaper
 ```
 
 本包**故意不声明任何 `dsh-*` peer 依赖**：它只 import `node:*` 和 `@deepseek-ai/dsh-tools`，后者由 harness 从自己的安装目录解析。不带任何可能遮蔽宿主的打包副本。
