@@ -62,7 +62,7 @@ Reaping is destructive, so the defaults are conservative and the refusals are ab
 ## Install
 
 ```
-dsh plugin add github:OWNER/dsh-reaper
+dsh plugin add https://github.com/11111353535/dsh-reaper
 ```
 
 From a checkout instead of a git host, pass the absolute path:

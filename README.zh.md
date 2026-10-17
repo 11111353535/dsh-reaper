@@ -62,7 +62,7 @@ workspace: E:\work\shop-frontend
 ## 安装
 
 ```
-dsh plugin add github:OWNER/dsh-reaper
+dsh plugin add https://github.com/11111353535/dsh-reaper
 ```
 
 想从本地检出装，就直接给绝对路径：
