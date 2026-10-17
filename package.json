@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "dsh-reaper",
   "version": "0.1.0",
   "description": "Orphan process and port reaper for DeepSeek Harness: find the dev servers, watchers and background processes an agent left behind, attribute them to a workspace, preview the blast radius, and reclaim the ports.",
@@ -52,10 +52,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/dsh-reaper.git"
+    "url": "git+https://github.com/11111353535/dsh-reaper.git"
   },
-  "homepage": "https://github.com/OWNER/dsh-reaper#readme",
+  "homepage": "https://github.com/11111353535/dsh-reaper#readme",
   "bugs": {
-    "url": "https://github.com/OWNER/dsh-reaper/issues"
+    "url": "https://github.com/11111353535/dsh-reaper/issues"
   }
 }
